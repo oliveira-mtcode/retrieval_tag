@@ -37,7 +37,3 @@ Please see the [Wiki](https://github.com/oliveira-mtcode/retrieval_tag/wiki) for
     - intervaltree
     - pysam
     - networkx
-
-## Acknowledgments
-
-Many of the major algorithmic improvements relative to RaGOO's first release were provided by Aleksey Zimin, lead developer of the [MaSuRCA assembler](https://github.com/alekseyzimin/masurca). [Luca Venturini](https://github.com/lucventurini) suggested and initially implemented many feature enhancements, such as pysam integration. RagTag "merge" was inspired by [CAMSA](https://doi.org/10.1186/s12859-017-1919-y). The developer of CAMSA, [Sergey Aganezov](https://github.com/aganezov), helped review relevant RagTag code. RagTag "patch" was inspired by [Grafter](https://github.com/mkirsche/Grafter), a scaffolding tool written by [Melanie Kirsche](https://github.com/mkirsche). Melanie provided guidance for the RagTag implementation. [Michael Schatz](http://schatz-lab.org/) has provided guidance for the whole project.   
