@@ -32,33 +32,7 @@ from ragtag_utilities.utilities import run_oe, run_e, log
 
 
 class Aligner:
-    """
-    This class is an Abstract Base Class and should be inherited by subclasses with
-    the goal of running pairwise sequence aligners on the command line. Subclasses should be
-    aligner-specific, specifying the parameters/output and performing all validity
-    checks.
 
-    The base class specifies generic information that is sufficient to run most pairwise aligners.
-    The generic information is as follows:
-
-        1. A file handle pointing to a reference sequence
-        2. A file handle pointing to a set of query sequences
-        3. Command line parameters
-        4. A file handle (or sometimes prefix) for the output alignments
-        5. A file handle for logging (i.e. stderr from the aligner)
-
-    Inheriting classes should perform the following tasks:
-        1. Check that all the file handles/executables are valid
-        2. Parse the command line arguments
-        3. Ensure a valid command can be constructed
-        4. Check if the output alignments already exist
-        5. Execute the command (run the aligner via subprocess)
-
-    A small number of these tasks are generic (or mostly generic) and can be specified in this base class.
-    For example, the base class can check that the aligner executable (e.g. 'minimap2') exists. However,
-    the majority of these tasks are specific to the aligner, and should be specified in inheriting classes
-    by overriding base class methods or by creating new methods.
-    """
     __metaclass__ = abc.ABCMeta
 
     def __init__(self, in_ref_file, in_query_files, in_aligner, in_params, in_out_file, in_overwrite=False):
